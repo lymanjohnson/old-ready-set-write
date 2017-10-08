@@ -72,6 +72,7 @@ ActiveRecord::Schema.define(version: 20171008223745) do
 
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
+    t.string "username", null: false
     t.string "subscription_type", default: "free"
     t.string "password_digest", null: false
     t.datetime "created_at", null: false
