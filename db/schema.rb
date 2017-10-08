@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20171008154230) do
   end
 
   create_table "user_cards", force: :cascade do |t|
+    t.string "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -51,11 +52,13 @@ ActiveRecord::Schema.define(version: 20171008154230) do
   end
 
   create_table "user_pages", force: :cascade do |t|
+    t.text "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "user_traits", force: :cascade do |t|
+    t.string "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
